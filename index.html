@@ -163,5 +163,27 @@
         </tr>
       </table>
     </section>
+    <section class="order">
+      <h2>Заказать</h2>
+      <p class="order-tip">Не ждите пока нас отрекламируют, как Вятский квас, и мы поднимем цены! Закажите настоящий крафтовый квас сейчас. При заказе от 10 баррелей — скидка 10%.</p>
+      <form action="/keksby-mail" class="order-form" method="post">
+        <label for="name">Представьтесь:</label>
+        <input type="text" name="name" id="name"><br>
+        <label for="phone">Номер телефона:</label>
+        <input type="tel" name="phone" id="phone"><br>
+        <label for="add-phone">Доп. номер:</label>
+        <input type="tel" name="additional-phone" id="add-phone"><br>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email"><br>
+        <label for="volume">Объем заказа:</label>
+        <select name="volume" id="volume">
+          <option value="5-10">От 5 до 10 баррелей в неделю</option>
+        </select><br>
+        <label for="comment">Доп. комментарий:</label>
+        <textarea name="comment" id="comment" cols="96" rows="10"></textarea><br>
+        <label><input type="checkbox"> Я согласен получать квасную рассылку</label><br>
+        <button type="submit">Отправить заказ</button>
+      </form>
+    </section>
   </body>
 </html>
